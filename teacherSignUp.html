@@ -6,56 +6,58 @@
 </head>
 <body>
 	<div id=signUps>	
-  		<form id="signUpForm" >
-  			<div id="professor">
-  				<h3>Professor:</h3>
-				<select name="professor" onchange="linford()">
-  					<option value="Chapman, Tom">Chapman, Tom</option>
-  					<option value="Allred, Phil">Allred, Phil</option>
-  					<option value="Butterfield, Rex">Butterfield, Rex</option>
-  					<option value="Linford, Kristy">Linford, Kristy</option>
-	 			</select>
-	 		</div>
+ 		<div id="user">
+  			<h3>Professor:</h3>
+			<select id="userSelect" onchange="linford()">
+  				<option value="Chapman, Tom">Chapman, Tom</option>
+  				<option value="Allred, Phil">Allred, Phil</option>
+  				<option value="Butterfield, Rex">Butterfield, Rex</option>
+  				<option value="Linford, Kristy">Linford, Kristy</option>
+	 		</select>
+		</div>
 
-	 		<div id="linford">
-	 			<form id="numSections">
-		 			<h3>Enter number of sections for each class.</h3>
-		 			100: <input type="text" class="numSections" name="numSections_0"><br>
-		 			121: <input type="text" class="numSections" name="numSections_1"><br>
-		 			122: <input type="text" class="numSections" name="numSections_2"><br>
-		 			130: <input type="text" class="numSections" name="numSections_3"><br>
-		 			190: <input type="text" class="numSections" name="numSections_4"><br>
-		 			200: <input type="text" class="numSections" name="numSections_5"><br>
-		 			211: <input type="text" class="numSections" name="numSections_6"><br>
-		 			212: <input type="text" class="numSections" name="numSections_7"><br>
-		 			215: <input type="text" class="numSections" name="numSections_8"><br>
-		 			225: <input type="text" class="numSections" name="numSections_9"><br>
-		 			234: <input type="text" class="numSections" name="numSections_10"><br>
-		 			235: <input type="text" class="numSections" name="numSections_11"><br>
-		 			250: <input type="text" class="numSections" name="numSections_12"><br>
-		 			261: <input type="text" class="numSections" name="numSections_13"><br>
-		 			275: <input type="text" class="numSections" name="numSections_14"><br>
-		 			301: <input type="text" class="numSections" name="numSections_15"><br>
-		 			302: <input type="text" class="numSections" name="numSections_16"><br>
-		 			324: <input type="text" class="numSections" name="numSections_17"><br>
-		 			325: <input type="text" class="numSections" name="numSections_18"><br>
-		 			327: <input type="text" class="numSections" name="numSections_19"><br>
-		 			333: <input type="text" class="numSections" name="numSections_10"><br>
-		 			341: <input type="text" class="numSections" name="numSections_21"><br>
-		 			342: <input type="text" class="numSections" name="numSections_22"><br>
-		 			343: <input type="text" class="numSections" name="numSections_23"><br>
-		 			345: <input type="text" class="numSections" name="numSections_24"><br>
-		 			351: <input type="text" class="numSections" name="numSections_25"><br>
-		 			352: <input type="text" class="numSections" name="numSections_26"><br>
-		 			390: <input type="text" class="numSections" name="numSections_27"><br>
-		 			397: <input type="text" class="numSections" name="numSections_28"><br>
-		 			404: <input type="text" class="numSections" name="numSections_29"><br>
-		 			431: <input type="text" class="numSections" name="numSections_30"><br>
-		 			371: <input type="text" class="numSections" name="numSections_31"><br>
-		 			375: <input type="text" class="numSections" name="numSections_32"><br>
-	 			</form>
-	 		</div>
+	 	<div id="linford">
+	 		<form id="numSections">
+	 			<h3>Enter number of sections for each class.</h3>
+	 			100: <input type="text" class="numSections" name="numSections_0"><br>
+	 			121: <input type="text" class="numSections" name="numSections_1"><br>
+	 			122: <input type="text" class="numSections" name="numSections_2"><br>
+	 			130: <input type="text" class="numSections" name="numSections_3"><br>
+	 			190: <input type="text" class="numSections" name="numSections_4"><br>
+	 			200: <input type="text" class="numSections" name="numSections_5"><br>
+	 			211: <input type="text" class="numSections" name="numSections_6"><br>
+	 			212: <input type="text" class="numSections" name="numSections_7"><br>
+	 			215: <input type="text" class="numSections" name="numSections_8"><br>
+	 			225: <input type="text" class="numSections" name="numSections_9"><br>
+	 			234: <input type="text" class="numSections" name="numSections_10"><br>
+	 			235: <input type="text" class="numSections" name="numSections_11"><br>
+	 			250: <input type="text" class="numSections" name="numSections_12"><br>
+	 			261: <input type="text" class="numSections" name="numSections_13"><br>
+	 			275: <input type="text" class="numSections" name="numSections_14"><br>
+	 			301: <input type="text" class="numSections" name="numSections_15"><br>
+	 			302: <input type="text" class="numSections" name="numSections_16"><br>
+	 			324: <input type="text" class="numSections" name="numSections_17"><br>
+	 			325: <input type="text" class="numSections" name="numSections_18"><br>
+	 			327: <input type="text" class="numSections" name="numSections_19"><br>
+	 			333: <input type="text" class="numSections" name="numSections_10"><br>
+	 			341: <input type="text" class="numSections" name="numSections_21"><br>
+	 			342: <input type="text" class="numSections" name="numSections_22"><br>
+	 			343: <input type="text" class="numSections" name="numSections_23"><br>
+	 			345: <input type="text" class="numSections" name="numSections_24"><br>
+	 			351: <input type="text" class="numSections" name="numSections_25"><br>
+	 			352: <input type="text" class="numSections" name="numSections_26"><br>
+	 			390: <input type="text" class="numSections" name="numSections_27"><br>
+	 			397: <input type="text" class="numSections" name="numSections_28"><br>
+	 			404: <input type="text" class="numSections" name="numSections_29"><br>
+	 			431: <input type="text" class="numSections" name="numSections_30"><br>
+	 			371: <input type="text" class="numSections" name="numSections_31"><br>
+	 			375: <input type="text" class="numSections" name="numSections_32"><br>
 
+	 			<input type="submit" value="Submit" id="linfordSubmit">
+	 		</form>
+	 	</div>
+
+		<form id="signUpForm" >
 		  	<h3>How many courses would you like to register for?</h3>
 	  		<select name="numCourses" onchange="courseSignUp()">
 	  			<option value="0">0</option>
@@ -297,7 +299,7 @@
 	  		</div>		
 	  		<br>
 
-	  		<input type="submit" value="Submit">
+	  		<input type="submit" value="Submit" id="professorSubmit">
 	  	</form>
 	</div>
 	<script src="teacherSignUp.js"></script>
