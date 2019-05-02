@@ -1,5 +1,307 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="teacherSignUp.css">
+  	<title>Sign Ups</title>
+</head>
+<body>
+	<div id=signUps>	
+ 		<div id="user">
+  			<h3>Professor:</h3>
+			<select id="userSelect" onchange="linford()">
+  				<option value="Chapman, Tom">Chapman, Tom</option>
+  				<option value="Allred, Phil">Allred, Phil</option>
+  				<option value="Butterfield, Rex">Butterfield, Rex</option>
+  				<option value="Linford, Kristy">Linford, Kristy</option>
+	 		</select>
+		</div>
 
-  phpinfo();
+	 	<div id="linford">
+	 		<form id="numSections">
+	 			<h3>Enter number of sections for each class.</h3>
+	 			100: <input type="text" class="numSections" name="numSections_0"><br>
+	 			121: <input type="text" class="numSections" name="numSections_1"><br>
+	 			122: <input type="text" class="numSections" name="numSections_2"><br>
+	 			130: <input type="text" class="numSections" name="numSections_3"><br>
+	 			190: <input type="text" class="numSections" name="numSections_4"><br>
+	 			200: <input type="text" class="numSections" name="numSections_5"><br>
+	 			211: <input type="text" class="numSections" name="numSections_6"><br>
+	 			212: <input type="text" class="numSections" name="numSections_7"><br>
+	 			215: <input type="text" class="numSections" name="numSections_8"><br>
+	 			225: <input type="text" class="numSections" name="numSections_9"><br>
+	 			234: <input type="text" class="numSections" name="numSections_10"><br>
+	 			235: <input type="text" class="numSections" name="numSections_11"><br>
+	 			250: <input type="text" class="numSections" name="numSections_12"><br>
+	 			261: <input type="text" class="numSections" name="numSections_13"><br>
+	 			275: <input type="text" class="numSections" name="numSections_14"><br>
+	 			301: <input type="text" class="numSections" name="numSections_15"><br>
+	 			302: <input type="text" class="numSections" name="numSections_16"><br>
+	 			324: <input type="text" class="numSections" name="numSections_17"><br>
+	 			325: <input type="text" class="numSections" name="numSections_18"><br>
+	 			327: <input type="text" class="numSections" name="numSections_19"><br>
+	 			333: <input type="text" class="numSections" name="numSections_10"><br>
+	 			341: <input type="text" class="numSections" name="numSections_21"><br>
+	 			342: <input type="text" class="numSections" name="numSections_22"><br>
+	 			343: <input type="text" class="numSections" name="numSections_23"><br>
+	 			345: <input type="text" class="numSections" name="numSections_24"><br>
+	 			351: <input type="text" class="numSections" name="numSections_25"><br>
+	 			352: <input type="text" class="numSections" name="numSections_26"><br>
+	 			390: <input type="text" class="numSections" name="numSections_27"><br>
+	 			397: <input type="text" class="numSections" name="numSections_28"><br>
+	 			404: <input type="text" class="numSections" name="numSections_29"><br>
+	 			431: <input type="text" class="numSections" name="numSections_30"><br>
+	 			371: <input type="text" class="numSections" name="numSections_31"><br>
+	 			375: <input type="text" class="numSections" name="numSections_32"><br>
 
-?>
+	 			<input type="submit" value="Submit" id="linfordSubmit">
+	 		</form>
+	 	</div>
+
+		<form id="signUpForm" >
+		  	<h3>How many courses would you like to register for?</h3>
+	  		<select name="numCourses" onchange="courseSignUp()">
+	  			<option value="0">0</option>
+	  			<option value="1">1</option>
+	  			<option value="2">2</option>	  			  			  		
+	  			<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+	  		</select>	  
+
+	  		<div id="courseSignUp_0">
+	  			<br>
+	  			<select name="courseSignUp_0">
+	  				<option value="100">Introduction to the Church of Jesus Christ of Latter-day Saints</option>
+					<option value="121">Book of Mormon pt.1</option>
+					<option value="122">Book of Mormon pt.2</option>
+					<option value="130">Missionary Preparation</option>
+					<option value="190">Special Topics in Scripture</option>
+					<option value="200">The Eternal Family</option>
+					<option value="211">New Testament pt.1</option>
+					<option value="212">New Testament pt.2</option>
+				 	<option value="215">Scripture Study</option>"
+					<option value="225">Foundations of the Restoration</option>
+					<option value="234">Preparing for Eternal Marriage</option>
+					<option value="235">Building an Eternal Marriage</option>
+					<option value="250">Jesus Christ and the Everlasting Gospel</option>
+					<option value="261">Introduction to Family History</option>
+					<option value="275">The Teachings and Doctrine of the Book of Mormon</option>
+					<option value="301">Old Testament pt.1</option>
+					<option value="302">Old Testament pt.2</option>
+					<option value="324">Doctrine and Covenants pt.1</option>
+					<option value="325">Doctrine and Covenants pt.2</option>
+					<option value="327">Pearl of Great Price</option>
+					<option value="333">Teachings of the Living Prophets</option>
+					<option value="341">Church History pt.1</option>
+				 	<option value="342">Church History pt.2</option>
+					<option value="343">Church History pt.3</option>
+					<option value="345">Presidents of the Church</option>
+					<option value="351">World Religions</option>
+					<option value="352">Christian History</option>
+					<option value="390R">Special Topics in Religion</option>
+				 	<option value="397">Religious Research</option>
+					<option value="404">Writings of Isaiah</option>
+					<option value="431">Doctrines of the Gospel</option>
+					<option value="471">Methods of Teaching Seminary</option>
+					<option value="475">Seminary Teaching Seminar</option>
+	  			</select>
+	  		</div>
+
+	  		<div id="courseSignUp_1">
+	  			<select name="courseSignUp_1">
+	  				<option value="100">Introduction to the Church of Jesus Christ of Latter-day Saints</option>
+					<option value="121">Book of Mormon pt.1</option>
+					<option value="122">Book of Mormon pt.2</option>
+					<option value="130">Missionary Preparation</option>
+					<option value="190">Special Topics in Scripture</option>
+					<option value="200">The Eternal Family</option>
+					<option value="211">New Testament pt.1</option>
+					<option value="212">New Testament pt.2</option>
+				 	<option value="215">Scripture Study</option>"
+					<option value="225">Foundations of the Restoration</option>
+					<option value="234">Preparing for Eternal Marriage</option>
+					<option value="235">Building an Eternal Marriage</option>
+					<option value="250">Jesus Christ and the Everlasting Gospel</option>
+					<option value="261">Introduction to Family History</option>
+					<option value="275">The Teachings and Doctrine of the Book of Mormon</option>
+					<option value="301">Old Testament pt.1</option>
+					<option value="302">Old Testament pt.2</option>
+					<option value="324">Doctrine and Covenants pt.1</option>
+					<option value="325">Doctrine and Covenants pt.2</option>
+					<option value="327">Pearl of Great Price</option>
+					<option value="333">Teachings of the Living Prophets</option>
+					<option value="341">Church History pt.1</option>
+				 	<option value="342">Church History pt.2</option>
+					<option value="343">Church History pt.3</option>
+					<option value="345">Presidents of the Church</option>
+					<option value="351">World Religions</option>
+					<option value="352">Christian History</option>
+					<option value="390R">Special Topics in Religion</option>
+				 	<option value="397">Religious Research</option>
+					<option value="404">Writings of Isaiah</option>
+					<option value="431">Doctrines of the Gospel</option>
+					<option value="471">Methods of Teaching Seminary</option>
+					<option value="475">Seminary Teaching Seminar</option>
+	  			</select>
+	  		</div>	
+
+	  		<div id="courseSignUp_2">
+	  			<select name="courseSignUp_2">
+	  				<option value="100">Introduction to the Church of Jesus Christ of Latter-day Saints</option>
+					<option value="121">Book of Mormon pt.1</option>
+					<option value="122">Book of Mormon pt.2</option>
+					<option value="130">Missionary Preparation</option>
+					<option value="190">Special Topics in Scripture</option>
+					<option value="200">The Eternal Family</option>
+					<option value="211">New Testament pt.1</option>
+					<option value="212">New Testament pt.2</option>
+				 	<option value="215">Scripture Study</option>"
+					<option value="225">Foundations of the Restoration</option>
+					<option value="234">Preparing for Eternal Marriage</option>
+					<option value="235">Building an Eternal Marriage</option>
+					<option value="250">Jesus Christ and the Everlasting Gospel</option>
+					<option value="261">Introduction to Family History</option>
+					<option value="275">The Teachings and Doctrine of the Book of Mormon</option>
+					<option value="301">Old Testament pt.1</option>
+					<option value="302">Old Testament pt.2</option>
+					<option value="324">Doctrine and Covenants pt.1</option>
+					<option value="325">Doctrine and Covenants pt.2</option>
+					<option value="327">Pearl of Great Price</option>
+					<option value="333">Teachings of the Living Prophets</option>
+					<option value="341">Church History pt.1</option>
+				 	<option value="342">Church History pt.2</option>
+					<option value="343">Church History pt.3</option>
+					<option value="345">Presidents of the Church</option>
+					<option value="351">World Religions</option>
+					<option value="352">Christian History</option>
+					<option value="390R">Special Topics in Religion</option>
+				 	<option value="397">Religious Research</option>
+					<option value="404">Writings of Isaiah</option>
+					<option value="431">Doctrines of the Gospel</option>
+					<option value="471">Methods of Teaching Seminary</option>
+					<option value="475">Seminary Teaching Seminar</option>
+	  			</select>
+	  		</div>	
+
+	  		<div id="courseSignUp_3">
+	  			<select name="courseSignUp_3">
+	  				<option value="100">Introduction to the Church of Jesus Christ of Latter-day Saints</option>
+					<option value="121">Book of Mormon pt.1</option>
+					<option value="122">Book of Mormon pt.2</option>
+					<option value="130">Missionary Preparation</option>
+					<option value="190">Special Topics in Scripture</option>
+					<option value="200">The Eternal Family</option>
+					<option value="211">New Testament pt.1</option>
+					<option value="212">New Testament pt.2</option>
+				 	<option value="215">Scripture Study</option>"
+					<option value="225">Foundations of the Restoration</option>
+					<option value="234">Preparing for Eternal Marriage</option>
+					<option value="235">Building an Eternal Marriage</option>
+					<option value="250">Jesus Christ and the Everlasting Gospel</option>
+					<option value="261">Introduction to Family History</option>
+					<option value="275">The Teachings and Doctrine of the Book of Mormon</option>
+					<option value="301">Old Testament pt.1</option>
+					<option value="302">Old Testament pt.2</option>
+					<option value="324">Doctrine and Covenants pt.1</option>
+					<option value="325">Doctrine and Covenants pt.2</option>
+					<option value="327">Pearl of Great Price</option>
+					<option value="333">Teachings of the Living Prophets</option>
+					<option value="341">Church History pt.1</option>
+				 	<option value="342">Church History pt.2</option>
+					<option value="343">Church History pt.3</option>
+					<option value="345">Presidents of the Church</option>
+					<option value="351">World Religions</option>
+					<option value="352">Christian History</option>
+					<option value="390R">Special Topics in Religion</option>
+				 	<option value="397">Religious Research</option>
+					<option value="404">Writings of Isaiah</option>
+					<option value="431">Doctrines of the Gospel</option>
+					<option value="471">Methods of Teaching Seminary</option>
+					<option value="475">Seminary Teaching Seminar</option>
+	  			</select>
+	  		</div>	
+
+	  		<div id="courseSignUp_4">
+	  			<select name="courseSignUp_4">
+	  				<option value="100">Introduction to the Church of Jesus Christ of Latter-day Saints</option>
+					<option value="121">Book of Mormon pt.1</option>
+					<option value="122">Book of Mormon pt.2</option>
+					<option value="130">Missionary Preparation</option>
+					<option value="190">Special Topics in Scripture</option>
+					<option value="200">The Eternal Family</option>
+					<option value="211">New Testament pt.1</option>
+					<option value="212">New Testament pt.2</option>
+				 	<option value="215">Scripture Study</option>"
+					<option value="225">Foundations of the Restoration</option>
+					<option value="234">Preparing for Eternal Marriage</option>
+					<option value="235">Building an Eternal Marriage</option>
+					<option value="250">Jesus Christ and the Everlasting Gospel</option>
+					<option value="261">Introduction to Family History</option>
+					<option value="275">The Teachings and Doctrine of the Book of Mormon</option>
+					<option value="301">Old Testament pt.1</option>
+					<option value="302">Old Testament pt.2</option>
+					<option value="324">Doctrine and Covenants pt.1</option>
+					<option value="325">Doctrine and Covenants pt.2</option>
+					<option value="327">Pearl of Great Price</option>
+					<option value="333">Teachings of the Living Prophets</option>
+					<option value="341">Church History pt.1</option>
+				 	<option value="342">Church History pt.2</option>
+					<option value="343">Church History pt.3</option>
+					<option value="345">Presidents of the Church</option>
+					<option value="351">World Religions</option>
+					<option value="352">Christian History</option>
+					<option value="390R">Special Topics in Religion</option>
+				 	<option value="397">Religious Research</option>
+					<option value="404">Writings of Isaiah</option>
+					<option value="431">Doctrines of the Gospel</option>
+					<option value="471">Methods of Teaching Seminary</option>
+					<option value="475">Seminary Teaching Seminar</option>
+	  			</select>
+	  		</div>	
+
+	  		<div id="courseSignUp_5">
+	  			<select name="courseSignUp_5">
+	  				<option value="100">Introduction to the Church of Jesus Christ of Latter-day Saints</option>
+					<option value="121">Book of Mormon pt.1</option>
+					<option value="122">Book of Mormon pt.2</option>
+					<option value="130">Missionary Preparation</option>
+					<option value="190">Special Topics in Scripture</option>
+					<option value="200">The Eternal Family</option>
+					<option value="211">New Testament pt.1</option>
+					<option value="212">New Testament pt.2</option>
+				 	<option value="215">Scripture Study</option>"
+					<option value="225">Foundations of the Restoration</option>
+					<option value="234">Preparing for Eternal Marriage</option>
+					<option value="235">Building an Eternal Marriage</option>
+					<option value="250">Jesus Christ and the Everlasting Gospel</option>
+					<option value="261">Introduction to Family History</option>
+					<option value="275">The Teachings and Doctrine of the Book of Mormon</option>
+					<option value="301">Old Testament pt.1</option>
+					<option value="302">Old Testament pt.2</option>
+					<option value="324">Doctrine and Covenants pt.1</option>
+					<option value="325">Doctrine and Covenants pt.2</option>
+					<option value="327">Pearl of Great Price</option>
+					<option value="333">Teachings of the Living Prophets</option>
+					<option value="341">Church History pt.1</option>
+				 	<option value="342">Church History pt.2</option>
+					<option value="343">Church History pt.3</option>
+					<option value="345">Presidents of the Church</option>
+					<option value="351">World Religions</option>
+					<option value="352">Christian History</option>
+					<option value="390R">Special Topics in Religion</option>
+				 	<option value="397">Religious Research</option>
+					<option value="404">Writings of Isaiah</option>
+					<option value="431">Doctrines of the Gospel</option>
+					<option value="471">Methods of Teaching Seminary</option>
+					<option value="475">Seminary Teaching Seminar</option>
+	  			</select>
+	  		</div>		
+	  		<br>
+
+	  		<input type="submit" value="Submit" id="professorSubmit">
+	  	</form>
+	</div>
+	<script src="teacherSignUp.js"></script>
+</body>
+</html>
